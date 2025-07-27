@@ -33,7 +33,11 @@ html{
     cursor: pointer;
 }
 
-.navbtn a button{
+.navbtn a:hover{
+    border-bottom: #75BF7A solid 2px;
+}
+
+.navbtn button{
     background-color: #75BF7A;
     border: none;
     color: white;
@@ -106,6 +110,7 @@ html{
     background-color: #75BF7A;
     margin: 0 300px;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .text2 p{
@@ -319,4 +324,64 @@ footer{
     border-top: #ECECEC solid 1px;
     color: #75BF7A;
     padding-top: 20px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.Menu{
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .navbtn{
+        display: none;
+    }
+    .Menu{
+        display: block;
+    }
+    .main1{
+        margin-top: 10px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .container1{
+        margin: 65px;
+        padding: 30px;
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .text2{
+        width: 100%;
+    }
+    
+    .btn2{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .btn2 input{
+        width: 100%;
+    }
+
+    .btn2 button{
+        width: 100%;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .text3{
+        text-align: center;
+    }
+    .main2{
+        flex-direction: column;
+    }
 }
