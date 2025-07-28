@@ -384,4 +384,18 @@ button:hover{
     .main2{
         flex-direction: column;
     }
+
+    .main3{
+        flex-direction: column;
+    }
+
+    .container2{
+        flex-direction: column;
+    }
+
+    .container3{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
 }
